@@ -1,8 +1,12 @@
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+
 const App = () => {
     return (
-        <div>
-            <h1 className="text-3xl ">Hello Nigga</h1>
-        </div>
+        <main>
+            <NavBar />
+            <Hero />
+        </main>
     );
 }
  export default App;
