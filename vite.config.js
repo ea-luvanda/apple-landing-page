@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/apple-landing-page/',
+  base: process.env.NODE_ENV === 'production' ? '/apple-landing-page/' : '/',
   plugins: [react(), tailwindcss()],
 })
